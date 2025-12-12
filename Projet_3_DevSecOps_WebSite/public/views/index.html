@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <title>MonAgendaPro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<nav class="navbar">
+    <a href="./index.html" class="nav-logo">MonAgendaPro</a>
+
+    <div class="nav-links">
+        <a href="#intro" class="nav-item">Présentation</a>
+        <a href="founder.html" class="nav-item">Les Fondateurs</a> <a href="login.php" class="nav-btn-connexion">Connexion</a>
+    </div>
+</nav>
+
+    
+    <div class="background-animation">
+        <div class="orbit orbit1"><div class="cercle1"></div></div>
+        <div class="cercle2"></div>
+        <div class="orbit orbit3"><div class="cercle3"></div></div>
+        <div class="orbit orbit4"><div class="cercle4"></div></div>
+        <div class="orbit orbit5"><div class="cercle5"></div></div>
+    </div>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text-box">
+                <a href="index.html" class="titre-barres">MonAgendaPro</a>
+                <div class="bar-deco top"></div>
+                <div class="bar-deco bottom"></div>
+            </div>
+            
+            <div class="boutons-container">
+                <a href="login.php" class="btn-rectangle">Se connecter</a>
+                <a href="register.php" class="btn-rectangle">S'inscrire</a>
+            </div>
+        </div>
+
+        <div class="spline-container">
+             <spline-viewer url="https://prod.spline.design/e0tP9lJ6G7-APtxP/scene.splinecode"></spline-viewer>
+        </div>
+
+        <div class="scroll-next">
+            <a href="#intro" class="scroll-down">
+                <i class="fa fa-angle-down scroll-down-icon"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="intro" class="intro-section">
+        <div class="container">
+            <h1>L'Avenir de la Gestion d'Événements est Ici.</h1>
+            <h3>Centralisez, organisez et découvrez. Une plateforme intuitive conçue pour les créateurs et les participants exigeants.</h3>
+            <p>Ne perdez plus de temps avec des organisations complexes. Notre plateforme offre une solution tout-en-un pour donner vie à vos projets. Que vous organisiez une conférence internationale, un hackathon intense ou un simple workshop, nous vous fournissons les outils pour réussir. Design épuré, fluidité maximale et expérience utilisateur repensée : bienvenue dans la nouvelle ère de l'événementiel.</p>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container feature-row">
+            <div class="feature-image">
+                <img src="../img/événements.png" alt="Événements">
+            </div>
+            <div class="feature-text">
+                <h2>Explorez et Localisez en un Coup d'œil</h2>
+                <h3>Accédez à un tableau de bord visuel et dynamique.</h3>
+                <ul>
+                    <li><strong>Visibilité Immédiate :</strong> Identifiez instantanément le thème, les horaires et le lieu.</li>
+                    <li><strong>Géolocalisation Intégrée :</strong> Carte interactive pour planifier votre trajet.</li>
+                    <li><strong>Navigation Fluide :</strong> Plongez au cœur des événements.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container feature-row reverse">
+            <div class="feature-text">
+                <h2>Organisez en Quelques Clics</h2>
+                <h3>Lancer un événement n'a jamais été aussi simple.</h3>
+                <ul>
+                    <li><strong>Interface Intuitive :</strong> En moins de deux minutes, votre événement est en ligne.</li>
+                    <li><strong>Précision :</strong> Plages horaires exactes et localisation précise.</li>
+                    <li><strong>Simplicité Administrative :</strong> Nous gérons la structure, vous gérez le contenu.</li>
+                </ul>
+            </div>
+            <div class="feature-image">
+                <img src="../img/création-événement.png" alt="Création">
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container feature-row">
+            <div class="feature-image">
+                <img src="../img/IMG-Fond-J&N.png" alt="Mode Jour Nuit">
+            </div>
+            <div class="feature-text">
+                <h2>Une Interface qui s'Adapte à Vous</h2>
+                <h3>Votre confort visuel est notre priorité.</h3>
+                <ul>
+                    <li><strong>Mode Jour (Light) :</strong> Lumineuse et professionnelle.</li>
+                    <li><strong>Mode Nuit (Dark) :</strong> Esthétique 'Cyber' immersive, idéale pour travailler tard.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">© 2025 MonAgendaPro. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.scroll-down').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#intro').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
+
+
